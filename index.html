@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Google </title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-links"><a href="https://gmail.com">Gmail</a></li>
+                <li class="nav-links"><a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a></li>
+                <li class="nav-links">
+                    <div class="apps">
+                        <img src="images/bars.png">
+                    </div>
+                </li>
+                <li class="nav-links"><a class="sign-in" href="https://myaccount.google.com">Sign in</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="google">
+        <div class="google-logo">
+            <img src="images/google.png" /></div>
+    </div>
+    <form id="search-form">
+        <div class="searchbox">
+            <div class="search-icon">
+                <img src="images/search.png" />
+            </div>
+            <input type="text" class="textsearch" id="search-field">
+            <div class="mic-icon">
+                <img src="images/mic.png" title="Search By Voice" />
+            </div>
+        </div>
+        
+        
+        <div class="btn-list">
+            <button class="btn" type="submit">Google Search</button>
+            <button class="btn" type="button">I'm Feeling Lucky</button>
+        </div>
+    </form>
+<div class="language">
+    <p>Google offered in: <a href="#">हिन्दी</a> <a href="#">বাংলা</a> <a href="#">తెలుగు</a> <a href="#">मराठी</a> <a href="#">தமிழ்</a> <a href="#">ગુજરાતી</a> <a href="#">ಕನ್ನಡ</a> <a href="#">മലയാളം</a> <a href="#">ਪੰਜਾਬੀ</a></p>
+</div>
+
+    <script type="text/javascript">
+        document.getElementById('search-form').onsubmit = function () {
+            window.location = 'http://www.google.com/search?q=' + document.getElementById('search-field').value;
+            return false;
+        }
+    </script>
+
+    <footer>
+
+        <div class="footer-top clearfix">
+            <ul class="footer-left">
+                <li>India</li>
+            </ul>
+        </div>
+        <div class="footer-bottom clearfix">
+            <ul class="footer-left">
+                <li><a href="https://ads.google.com/">Advertising</a></li>
+                <li><a
+                        href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                </li>
+                <li><a
+                        href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                </li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1">How search works</a></li>
+
+            </ul>
+            <ul class="footer-right">
+                <li> <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+                <li> <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+                <li> <a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
